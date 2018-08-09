@@ -1,0 +1,83 @@
+<RelativeLayout
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:id="@+id/red"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="red"
+
+        android:background="#ff0000"/>
+    <TextView
+        android:id="@+id/orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="orange"
+        Right="@id/red"
+        android:background="#ff8000"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/yellow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orange"
+        android:text="yellow"
+        android:layout_alignParentRight="true" Right="@id/orange"
+        android:layout_alignTop="@+id/orange"
+        android:background="#ffff00"/>
+    <TextView
+        android:id="@+id/green"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="green"
+
+        android:background="#00ff00"
+        android:layout_marginRight="99dp"
+        android:layout_marginEnd="99dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/orange"
+        android:layout_toStartOf="@+id/orange" />
+    <TextView
+        android:id="@+id/blue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="blue"
+
+        android:background="#0000ff"
+        android:layout_alignBaseline="@+id/green"
+        android:layout_alignBottom="@+id/green"
+        android:layout_centerHorizontal="true" />
+    <TextView
+        android:id="@+id/indigo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="indigo"
+
+        android:background="#4B0082"
+        android:layout_alignBaseline="@+id/blue"
+        android:layout_alignBottom="@+id/blue"
+        android:layout_toRightOf="@+id/orange"
+        android:layout_toEndOf="@+id/orange"
+        android:layout_marginLeft="65dp"
+        android:layout_marginStart="65dp" />
+    <TextView
+        android:id="@+id/violet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="violet"
+        android:gravity="center"
+        android:background="#EE82EE"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+
+
+
+
+</RelativeLayout>
